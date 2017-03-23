@@ -1,5 +1,3 @@
-# Advance JavaScript
-
 # Arrow functions
 
 An arrow function expression has a shorter syntax than a function expression and does not bind its own this, arguments, super, or new.target. These function expressions are best suited for non-method functions, and they cannot be used as constructors.
@@ -34,6 +32,9 @@ params => ({foo: bar})
 var f = ([a, b] = [1, 2], {x: c} = {x: a + b}) => a + b + c;
 f();  // 6
 ````
+
+
+# Advance JavaScript
 
 
 ````JS
