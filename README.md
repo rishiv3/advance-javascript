@@ -18,7 +18,6 @@ singleParam => { statements }
 () => expression // equivalent to: () => { return expression; }
 ````
 
-
 ## Advanced Syntax
 ````JS
 // Parenthesize the body to return an object literal expression:
