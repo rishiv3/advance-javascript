@@ -18,6 +18,22 @@ singleParam => { statements }
 () => expression // equivalent to: () => { return expression; }
 ````
 
+# Classes & Constructors
+Always use class. Avoid manipulating prototype directly.
+class syntax is more concise and easier to reason about.
+````JS
+class Queue {
+  constructor(contents = []) {
+    this.queue = [...contents];
+  }
+  pop() {
+    const value = this.queue[0];
+    this.queue.splice(0, 1);
+    return value;
+  }
+}
+````
+
 ## Advanced Syntax
 ````JS
 // Parenthesize the body to return an object literal expression:
