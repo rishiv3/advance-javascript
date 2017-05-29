@@ -154,4 +154,4 @@ xxx // Great placeholder. I'm the only one using xxx and it's so easy to find in
 doSomeMoreMath(z, 15);
 ````
 
-#### TODO : function
+#### TODO : Map, Reduce, and Filter
