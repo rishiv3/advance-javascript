@@ -1,3 +1,10 @@
+# Web Manifest Validator
+
+This page is meant to be used to test the validity of a Web Manifest. The parser follows the rules from the W3C specification.
+
+https://manifest-validator.appspot.com/
+
+
 # Arrow functions
 
 An arrow function expression has a shorter syntax than a function expression and does not bind its own this, arguments, super, or new.target. These function expressions are best suited for non-method functions, and they cannot be used as constructors.
