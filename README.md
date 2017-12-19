@@ -161,9 +161,6 @@ xxx // Great placeholder. I'm the only one using xxx and it's so easy to find in
 doSomeMoreMath(z, 15);
 ````
 
-#### TODO : Map, Reduce, and Filter
-
-
 Sorting
 =======
 You could use the options of [String#localeCompare](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/localeCompare) for natural sorting.
@@ -177,6 +174,6 @@ arr.sort(function(a, b) {
 
 console.log(arr);
 ````
-
+This Array is form of [Lexicographical Order](https://en.wikipedia.org/wiki/Lexicographical_order)
 
 
