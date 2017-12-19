@@ -162,3 +162,21 @@ doSomeMoreMath(z, 15);
 ````
 
 #### TODO : Map, Reduce, and Filter
+
+
+Sorting
+=======
+You could use the options of String#localeCompare for natural sorting.
+
+````JavaScript
+let arr = [{label: "Name 5"}, {label: "Name 3"},{label: "Name 12"}, {label: "Name 10"}, {label: "First Name 5"}, {label: "Apple"}, {label: "Orange"}, {label: "water"}];
+
+arr.sort(function(a, b) {
+   return a.label.localeCompare(b.label, undefined, { numeric: true, sensitivity: 'base' });
+});
+
+console.log(arr);
+````
+
+
+
