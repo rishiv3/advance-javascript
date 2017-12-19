@@ -166,7 +166,7 @@ doSomeMoreMath(z, 15);
 
 Sorting
 =======
-You could use the options of (String#localeCompare)[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/localeCompare] for natural sorting.
+You could use the options of [String#localeCompare](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/localeCompare) for natural sorting.
 
 ````JavaScript
 let arr = [{label: "Name 5"}, {label: "Name 3"},{label: "Name 12"}, {label: "Name 10"}, {label: "First Name 5"}, {label: "Apple"}, {label: "Orange"}, {label: "water"}];
