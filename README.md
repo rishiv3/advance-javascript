@@ -176,5 +176,63 @@ console.log(arr);
 ````
 This Array is form of [Lexicographical Order](https://en.wikipedia.org/wiki/Lexicographical_order)
 
-TODO;
+
+<hr>
+
+## How do I test for an empty JavaScript object?
+
+[ECMA 5+][1]:
+
+    // because Object.keys(new Date()).length === 0;
+    // we have to do some additional check
+    Object.keys(obj).length === 0 && obj.constructor === Object
+
+Pre-ECMA 5:
+
+    function isEmpty(obj) {
+        for(var prop in obj) {
+            if(obj.hasOwnProperty(prop))
+                return false;
+        }
+    
+        return JSON.stringify(obj) === JSON.stringify({});
+    }
+
+[jQuery][2]:
+
+    jQuery.isEmptyObject({}); // true
+
+[lodash][3]:
+
+    _.isEmpty({}); // true
+
+[Underscore][4]:
+
+    _.isEmpty({}); // true
+
+[Hoek][5]
+
+    Hoek.deepEqual({}, {}); // true
+
+[ExtJS][6]
+
+    Ext.Object.isEmpty({}); // true
+
+[AngularJS (version 1)][7]
+
+    angular.equals({}, {}); // true
+
+[Ramda][8]
+
+    R.isEmpty({}); // true
+
+  [1]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys#Browser_compatibility
+  [2]: http://api.jquery.com/jQuery.isEmptyObject/
+  [3]: https://lodash.com/docs#isEmpty
+  [4]: http://underscorejs.org/#isEmpty
+  [5]: https://github.com/hapijs/hoek
+  [6]: http://docs.sencha.com/extjs/6.0.2/modern/Ext.html#method-isEmpty
+  [7]: https://docs.angularjs.org/api/ng/function/angular.equals
+  [8]: http://ramdajs.com/docs/#isEmpty
+
 
